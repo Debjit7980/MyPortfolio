@@ -24,7 +24,7 @@ function Contact({ about }) {
   return (
     <motion.div className='w-full  md:pt-[180px] pt-[120px]  md:pb-[50px]' variants={variants} initial="initial" whileInView="animate">
       <div ref={ref} ></div>
-      <motion.div className='w-[80%] flex md:flex-row flex-col  md:gap-0 gap-[40px]  pb-[20px] mx-auto' variants={variants}>
+      <motion.div className='md:w-[80%] w-[90%] flex md:flex-row flex-col  md:gap-0 gap-[40px]  pb-[20px] mx-auto' variants={variants}>
         <motion.div className='md:w-[50%] flex flex-col  justify-center ' variants={variants}>
           <motion.span className='text-[70px] font-bold'>Let's work together</motion.span>
           <motion.span className='font-bold text-[22px] mt-5 ' variants={variants}>Mail</motion.span>
