@@ -79,10 +79,10 @@ function Hero({ about }) {
             <motion.span className='text-[30px] tracking-[6px] text-[#663399] font-bold uppercase' variants={textVariant}>{name}</motion.span>
             <motion.span className='md:text-[40px] text-[26px] font-semibold' variants={textVariant}>{about.subTitle}.</motion.span>
             <motion.div className='z-10 flex gap-[22px]' variants={textVariant}>
-              <motion.button className='p-[12px] border border-white bg-transparent hover:bg-white text-white hover:text-[#111132] font-light rounded-[10px] text-lg cursor-pointer' variants={textVariant}>
+              <motion.button className='p-[12px] border border-white bg-transparent hover:bg-white text-white hover:text-[#111132] hover:duration-700 font-light rounded-[10px] text-lg cursor-pointer' variants={textVariant}>
                 See the Latest Works
               </motion.button>
-              <motion.button className='p-[12px] border border-white bg-white hover:bg-transparent text-[#111132] hover:text-white font-light rounded-[10px] text-lg cursor-pointer' variants={textVariant}>
+              <motion.button className='p-[12px] border border-white bg-white hover:bg-transparent text-[#111132] hover:text-white hover:duration-700 font-light rounded-[10px] text-lg cursor-pointer' variants={textVariant}>
                 Contact Me
               </motion.button>
             </motion.div>
