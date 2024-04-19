@@ -5,7 +5,7 @@ function Services({ services }) {
 
   const textVariant = {
     initial: {
-      x: -500,
+      x: -200,
       opacity:0,
     },
     animate: {
@@ -16,7 +16,7 @@ function Services({ services }) {
       },
     },
     initialText: {
-      x: 500,
+      x: 200,
       opacity:0,
     },
     animateText: {
@@ -33,7 +33,7 @@ function Services({ services }) {
 
   const variant = {
     initial: {
-      x: 500,
+      x: 200,
       opacity:0,
     },
     animate: {
@@ -44,7 +44,7 @@ function Services({ services }) {
       },
     },
     initialText: {
-      x: -500,
+      x: -200,
       opacity:0,
     },
     animateText: {
@@ -68,8 +68,8 @@ function Services({ services }) {
       <div className='md:w-[92%] w-[85%] mx-auto h-auto relative flex flex-col md:gap-[180px] gap-[120px]   z-0 '>
         {services.map((service, index) => (
           index % 2 === 0 ? (
-            <motion.div key={index} className='relative shadow-lg shadow-black md:shadow-none' variants={textVariant} initial="initial" whileInView="animate">
-              <div className='relative md:h-[350px] md:w-[52%] md:shadow-lg md:shadow-black'>
+            <motion.div key={index} className='relative  md:shadow-none' variants={textVariant} initial="initial" whileInView="animate">
+              <div className='relative md:h-[350px] md:w-[52%] shadow-lg shadow-black'>
                 <img src={service.image.url} alt={service.name} className='w-full h-full object-cover' />
                 <div className='faded-service absolute top-0 h-full left-0 w-full'></div>
               </div>
@@ -83,11 +83,11 @@ function Services({ services }) {
             </motion.div>
           ) : (
             <motion.div key={index} className='relative md:w-[52%] md:ml-auto' variants={variant} initial="initial" whileInView="animate">
-              <div className='relative md:h-[350px]  md:shadow-lg md:shadow-black'>
+              <div className='relative md:h-[350px]  shadow-lg shadow-black'>
                 <img src={service.image.url} alt={service.name} className='w-full h-full object-cover' />
                 <div className='faded-service-1 absolute top-0 h-full left-0 w-full'></div>
               </div>
-              <motion.div className='md:absolute md:p-0 p-4 md:bg-transparent bg-[#0c0c1d] md:top-[12%] md:-ml-[82%] md:w-[550px] flex flex-col' variants={variant} initial="initialText" whileInView="animateText">
+              <motion.div className='md:absolute md:p-0 p-4  md:shadow-none md:bg-transparent bg-[#0c0c1d] md:top-[12%] md:-ml-[82%] md:w-[550px] flex flex-col' variants={variant} initial="initialText" whileInView="animateText">
                 <motion.h2 className='md:text-[32px] text-[24px] font-bold md:mr-auto mb-5' variants={variant}>{service.name}</motion.h2>
                 <div className='bg-[#0c0c1d] text-left md:rounded-lg md:p-4 flex flex-col gap-[20px] md:shadow-lg md:shadow-black'>
                   <p className='md:text-[20px]'>{service.desc}</p>
