@@ -15,7 +15,7 @@ function Services({ services }) {
                 <img src={service.image.url} alt={service.name} className='w-full h-full object-cover' />
                 <div className='faded-service absolute top-0 h-full left-0 w-full'></div>
               </div>
-              <div className='md:absolute md:p-0 p-4 md:top-[12%] md:left-[50%] md:bg-transparent bg-[#0c0c1d]  left-0 md:w-[550px] flex flex-col '>
+              <div className='md:absolute md:p-0 p-4 md:top-[12%] md:left-[47%] md:bg-transparent bg-[#0c0c1d]  left-0 md:w-[550px] flex flex-col '>
                 <h2 className='md:text-[32px] text-[24px] font-bold md:ml-auto mb-5'>{service.name}</h2>
                 <div className='bg-[#0c0c1d] md:text-right md:rounded-lg md:p-4 flex flex-col gap-[20px] md:shadow-lg md:shadow-black'>
                   <p className='md:text-[20px]'>{service.desc}</p>
@@ -29,7 +29,7 @@ function Services({ services }) {
                 <img src={service.image.url} alt={service.name} className='w-full h-full object-cover' />
                 <div className='faded-service-1 absolute top-0 h-full left-0 w-full'></div>
               </div>
-              <div className='md:absolute md:p-0 p-4 md:bg-transparent bg-[#0c0c1d] md:top-[12%] md:-left-[70%] md:w-[550px] flex flex-col '>
+              <div className='md:absolute md:p-0 p-4 md:bg-transparent bg-[#0c0c1d] md:top-[12%] md:-left-[75%] md:w-[550px] flex flex-col '>
                 <h2 className='md:text-[32px] text-[24px] font-bold md:mr-auto mb-5'>{service.name}</h2>
                 <div className='bg-[#0c0c1d] text-left md:rounded-lg md:p-4 flex flex-col gap-[20px] md:shadow-lg md:shadow-black'>
                   <p className='md:text-[20px]'>{service.desc}</p>
