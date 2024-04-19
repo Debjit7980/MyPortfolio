@@ -37,7 +37,7 @@ function Projects({ projects }) {
                 {displayedProjects.map(project => (
                     <div key={project._id} className="md:w-[30%]  mb-[60px] ">
                         <button onClick={() => toggleProjectDetails(project._id)} className=" projectDiv rounded-2xl p-0 z-0 text-left">
-                            <img src={project.image.url} alt={project.title} className=" w-full h-[300px] rounded-t-2xl" />
+                            <img src={project.image.url} alt={project.title} className=" w-full h-[300px] md:h-[280px] rounded-t-2xl" />
                             <div className='p-3 pb-12 border border-purple-600 rounded-b-2xl'>
                                 <h3 className="text-[24px] text-gray-400 font-semibold mt-4">{project.title}</h3>
                                 <p className='mt-6'><span className="text-md text-gray-400 flex flex-wrap gap-[20px]"> {project.techStack.map((tech,index)=>(<span className='border border-gray-400 pl-3 pr-3 pt-1 pb-1 rounded-[15px]' key={index}>{tech.trim()}</span>))}</span></p>
@@ -47,12 +47,12 @@ function Projects({ projects }) {
                         {/* Render project description popup */}
                         {selectedProject === project._id && (
                             <div className="bg-black z-50 border border-violet-600 rounded-lg fixed md:w-[50%] w-[90%] top-[5%] md:top-[2%]  left-[5%] md:left-[25%]">
-                                <div className="p-4  rounded-lg relative">
+                                <div className="p-2  rounded-lg relative">
                                     <img src={project.image.url} alt={project.title} className=" w-full h-[200px] md:h-[320px] object-cover  rounded-lg" />
-                                    <h2 className="text-[24px]   font-semibold md:mt-5 mt-4">{project.title}</h2>
+                                    <h2 className="text-[24px]   font-semibold md:mt-4 mt-5">{project.title}</h2>
                                     <p className='mt-4'><span className="text-sm text-gray-400 flex gap-[15px]"> {project.techStack.map((tech,index)=>(<span className='border border-gray-400 pl-3 pr-3 pt-1 pb-1 rounded-[18px]' key={index}>{tech.trim()}</span>))}</span></p>
-                                    <p className="text-gray-400 text-md mt-4">{project.description}</p>
-                                    <div className="flex justify-between mt-5">
+                                    <p className="text-gray-400 text-sm mt-4">{project.description}</p>
+                                    <div className="flex justify-between mt-4">
                                         <a href={project.githuburl} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#3f0896] to-[#663399] text-white  text-[20px] text-center px-0  py-2 md:w-[20%] w-[25%] rounded mr-2">GitHub</a>
                                         <a href={project.liveurl} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#3f0896] to-[#663399] text-white  text-[20px] text-center py-2 md:w-[20%] w-[25%] rounded">Live</a>
                                     </div>
