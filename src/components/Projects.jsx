@@ -50,7 +50,7 @@ function Projects({ projects }) {
                                 <div className="p-3  rounded-lg relative">
                                     <img src={project.image.url} alt={project.title} className=" w-full h-[200px] md:h-[320px] object-cover  rounded-lg" />
                                     <h2 className="text-[24px]   font-semibold md:mt-4 mt-5">{project.title}</h2>
-                                    <p className='mt-4'><span className="text-sm text-gray-400 flex gap-[15px]"> {project.techStack.map((tech,index)=>(<span className='border border-gray-400 pl-3 pr-3 pt-1 pb-1 rounded-[18px]' key={index}>{tech.trim()}</span>))}</span></p>
+                                    <p className='mt-4'><span className="text-sm text-gray-400 flex gap-[15px] flex-wrap"> {project.techStack.map((tech,index)=>(<span className='border border-gray-400 pl-3 pr-3 pt-1 pb-1 rounded-[18px]' key={index}>{tech.trim()}</span>))}</span></p>
                                     <p className="text-gray-400 text-sm mt-4">{project.description}</p>
                                     <div className="flex justify-between mt-4">
                                         <a href={project.githuburl} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#3f0896] to-[#663399] text-white  text-[20px] text-center px-0  py-2 md:w-[20%] w-[25%] rounded mr-2">GitHub</a>
