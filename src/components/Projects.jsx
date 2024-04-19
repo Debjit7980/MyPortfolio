@@ -46,8 +46,8 @@ function Projects({ projects }) {
                         </button>
                         {/* Render project description popup */}
                         {selectedProject === project._id && (
-                            <div className="bg-black z-50 border border-violet-600 rounded-lg fixed md:w-[50%] w-[90%] top-[5%] md:top-[2%]  left-[5%] md:left-[25%]">
-                                <div className="p-2  rounded-lg relative">
+                            <div className="bg-black z-50 border border-violet-600 rounded-lg fixed md:w-[50%] w-[90%] top-[5%] md:top-[3%]  left-[5%] md:left-[25%]">
+                                <div className="p-3  rounded-lg relative">
                                     <img src={project.image.url} alt={project.title} className=" w-full h-[200px] md:h-[320px] object-cover  rounded-lg" />
                                     <h2 className="text-[24px]   font-semibold md:mt-4 mt-5">{project.title}</h2>
                                     <p className='mt-4'><span className="text-sm text-gray-400 flex gap-[15px]"> {project.techStack.map((tech,index)=>(<span className='border border-gray-400 pl-3 pr-3 pt-1 pb-1 rounded-[18px]' key={index}>{tech.trim()}</span>))}</span></p>
