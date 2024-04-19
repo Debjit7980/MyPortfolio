@@ -19,6 +19,18 @@ function Hero({ about }) {
         staggerChildren: 0.1,
       },
     },
+    initialImage:{
+      x:200,
+      opacity:0,
+    },
+    animateImage:{
+      x:0,
+      opacity:1,
+      transition:{
+        duration:1,
+        delay:1
+      },
+    },
 
   };
 
@@ -76,12 +88,12 @@ function Hero({ about }) {
             </motion.div>
           </motion.div>
         </div>
-        <div className='md:w-[40%]'>
+        <motion.div className='md:w-[40%]' variants={textVariant} initial="initialImage" animate="animateImage">
           <div className='w-[320px] h-[320px]  mt-[20%] relative mx-auto'>
             <div className=' w-[260px] h-[280px] mb-auto  ml-auto z-0 bg-gradient-to-b from-[#3f0896] to-[#663399] shadow-xl-black' style={{ boxShadow: "0 0 10px rgb(12,12,29)" }}></div>
             <img src={avatar?.url} className=' w-[280px] h-[280px] mt-auto object-cover z-10 absolute top-9 rounded-bl-[30%]' />
           </div>
-        </div>
+        </motion.div>
       </div>
       <motion.div className='w-[50%] font-bold z-0 md:bottom-10 bottom-[0%] text-[#ffffff06] absolute text-7xl md:text-[50vh]' variants={slideVariant} initial="initial" animate="animate">
         <span className='whitespace-nowrap capitalize'>{about.quote}</span>
