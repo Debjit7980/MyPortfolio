@@ -76,7 +76,7 @@ function Timeline({ edu, exp }) {
         </div>
       </div>
 
-      <div className='text-[42px]  pb-20  md:mt-0 mt-6 relative'>
+      <div className='text-[42px]  pb-20  md:mt-0 md:mt-0 mt-12 relative'>
         <span className='md:ml-[15%] ml-[4%] font-bold'>Experience</span>
         <div className='md:absolute md:top-[25%] md:left-[34%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[22%] w-[30%] '></div>
       </div>
