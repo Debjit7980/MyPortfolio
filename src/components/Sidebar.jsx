@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import {delay, motion} from 'framer-motion';
 import { RiMenuUnfoldLine } from "react-icons/ri";
 import { RiMenuFoldLine } from "react-icons/ri";
@@ -58,9 +59,9 @@ function Sidebar() {
         <motion.div className='fixed z-40 top-0 left-0 bottom-0 w-[400px] bg-white' variants={variant}>
             <motion.div className='absolute w-[100%] h-screen flex flex-col items-center justify-center gap-[30px] text-2xl tracking-wider' variants={linkVariants}>
                 {links.map((link)=>(
-                    <motion.a href={`#${link}`}  key={link} variants={itemVariants} onClick={()=>setOpen((prev)=>!prev)} whileHover={{scale:1.2}}  whileTap={{scale:0.95}}>
+                    <motion.Link to={`${link}`} spy={true} smooth={true} offset={50} duration={500} key={link} variants={itemVariants} onClick={()=>setOpen((prev)=>!prev)} whileHover={{scale:1.2}}  whileTap={{scale:0.95}}>
                         {link}
-                    </motion.a>
+                    </motion.Link>
                 ))}
             </motion.div>
         </motion.div>
