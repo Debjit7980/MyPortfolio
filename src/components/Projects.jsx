@@ -1,6 +1,23 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 function Projects({ projects }) {
+
+    const textVariant = {
+        initial: {
+          x: -500,
+          opacity:0,
+        },
+        animate: {
+          x: 0,
+          opacity:1,
+          transition: {
+            duration: 1,
+          },
+        },
+    
+    };
+
     // Ensure projects data is available and not null
     if (!projects || projects.length === 0) {
         return <div>No projects found.</div>;
@@ -25,12 +42,13 @@ function Projects({ projects }) {
     // Slice projects based on showAllProjects state
     const displayedProjects = showAllProjects ? projects : projects.slice(0, 8);
     selectedProject?document.body.style.overflow="hidden":document.body.style.overflow="auto";
+    
 
     return (
         <div className={`faded-3 w-[100%] relative`}>
             <div className='bg-gradient-to-b from-[#111132] to-[#0c0c1d] text-[42px] md:pt-20 pb-20 tracking-[6px] relative'>
-                <span className='md:ml-[3%] ml-[4%]'>PROJECTS</span>
-                <div className='md:absolute md:top-[50%] md:left-[24%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%] '></div>
+                <motion.div className='md:ml-[3%] ml-[4%]' variants={textVariant} initial="initial" whileInView="animate">PROJECTS</motion.div>
+                <motion.div className='md:absolute md:top-[50%] md:left-[24%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%]' initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1}}}></motion.div>
             </div>
             <div className="flex md:flex-wrap md:flex-row flex-col  md:w-[94%] w-[85%] mt-[20px]  justify-between mx-auto">
                 {/* Map over the displayed projects and display each project */}
