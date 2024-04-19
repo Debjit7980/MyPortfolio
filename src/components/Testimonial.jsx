@@ -12,7 +12,7 @@ function Testimonial({ reviews }) {
         <section className='md:px-20  pb-20 px-4 w-[100%] font-custom '>
             <div className='text-[42px] pt-20 pb-20  relative'>
                 <span className='font-bold'>Testimonials</span>
-                <div className='md:absolute md:top-[50%] md:left-[18%] border-t border-gray-600 md:w-[18%] w-[45%] '></div>
+                <div className='md:absolute md:top-[50%] md:left-[24%] border-t border-gray-600 md:w-[18%] w-[45%] '></div>
             </div>
             <Swiper
                 slidesPerView={1}
@@ -43,11 +43,11 @@ function Testimonial({ reviews }) {
                         // const { id, name, review, image } = value;
                         // console.log(name.split(' '))
                         return <SwiperSlide key={review._id}>
-                            <div className="relative border-2 border-purple-600  w-[95%]  md:h-[250px] h-[420px] p-2 duration-200 cursor-default flex items-center">
+                            <div className="relative border-2 border-purple-600  w-[95%]  md:h-[250px] h-[400px] p-2 duration-200 cursor-default flex items-center">
                                 <div className="absolute w-full top-[15px]  pl-2 pr-2 items-center  ">
                                     <h1 className='text-2xl font-bold'>{review.name}</h1>
                                     <h1  className='text-lg mt-2'>{review.position}</h1>
-                                    <p className="text-lg mt-4 mr-12 pr-2">
+                                    <p className="text-md mt-4 mr-12 pr-2">
                                         {review.review}
                                     </p>
                                 </div>

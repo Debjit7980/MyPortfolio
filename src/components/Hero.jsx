@@ -63,7 +63,7 @@ function Hero({ about }) {
     <div className='md:h-screen h-[100%] w-[100%] relative overflow-hidden'>
       <div className='w-[100%]  h-[100%] pb-[28%] md:p-0 flex md:flex-row flex-col-reverse bg-gradient-to-b from-[#0c0c1d] to-[#111132] ' style={{ overflowX: 'hidden' }}>
         <div className='md:w-[55%] w-full   h-full'>
-          <motion.div className='flex  flex-col gap-[45px] mt-[14%] md:w-[50%]  md:p-0 p-4  mx-auto' variants={textVariant} initial="initial" animate="animate">
+          <motion.div className='flex  flex-col gap-[45px] mt-[14%] md:w-[55%]  md:p-0 p-4  mx-auto' variants={textVariant} initial="initial" animate="animate">
             <motion.span className='text-[30px] tracking-[6px] text-[#663399] font-bold uppercase' variants={textVariant}>{name}</motion.span>
             <motion.span className='md:text-[40px] text-[26px] font-semibold' variants={textVariant}>{about.subTitle}.</motion.span>
             <motion.div className='z-10 flex gap-[22px]' variants={textVariant}>
@@ -83,7 +83,7 @@ function Hero({ about }) {
           </div>
         </div>
       </div>
-      <motion.div className='w-[50%] font-bold z-0 md:bottom-12 bottom-[0%] text-[#ffffff06] absolute text-7xl md:text-[50vh]' variants={slideVariant} initial="initial" animate="animate">
+      <motion.div className='w-[50%] font-bold z-0 md:bottom-10 bottom-[0%] text-[#ffffff06] absolute text-7xl md:text-[50vh]' variants={slideVariant} initial="initial" animate="animate">
         <span className='whitespace-nowrap capitalize'>{about.quote}</span>
       </motion.div>
       <motion.div className='md:bottom-[20%] bottom-5 md:left-[45%] left-[30%] absolute items-center flex flex-col' variants={slideVariant} animate="spring" >
