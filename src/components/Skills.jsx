@@ -31,7 +31,7 @@ function Skills({ skills }) {
     <div className='faded-2 w-[100%] md:pt-[90px] z-0 pb-[90px]'>
       
       <div className='w-[60%]'>
-        <span className='md:text-[35vh] text-[14vh] font-bold tracking-wider ml-[20px] md:text-gray-600 opacity-20'>SKILLS</span>
+        <span className='md:text-[35vh] text-[12vh] font-bold tracking-wider md:ml-[20px] md:text-gray-600 opacity-20'>SKILLS</span>
       </div>
       <div ref={scrollRef}></div>
       <div className='w-[94%] flex md:flex-row  flex-wrap justify-between  md:gap-[35px]   mx-auto  '>

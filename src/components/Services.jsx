@@ -5,13 +5,13 @@ function Services({ services }) {
     <div className='bg-[#111132] h-auto pt-[120px] pb-[40px]  w-full'>
       <div className='text-[42px] pt-20 pb-20  relative'>
         <span className='md:ml-[11%] ml-[4%] font-bold'>Services I Offer</span>
-        <div className='md:absolute md:top-[50%] md:left-[30%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%] '></div>
+        <div className='md:absolute md:top-[50%] md:left-[35%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%] '></div>
       </div>
       <div className='w-[90%]  mx-auto h-auto relative flex flex-col md:gap-[180px] gap-[120px]   z-0 '>
         {services.map((service, index) => (
           index % 2 === 0 ? (
             <div key={index} className='relative md:ml-[7%] shadow-lg shadow-black md:shadow-none'>
-              <div className='relative md:h-[450px] md:w-[55%] md:shadow-lg md:shadow-black'>
+              <div className='relative md:h-[400px] md:w-[55%] md:shadow-lg md:shadow-black'>
                 <img src={service.image.url} alt={service.name} className='w-full h-full object-cover' />
                 <div className='faded-service absolute top-0 h-full left-0 w-full'></div>
               </div>
@@ -25,7 +25,7 @@ function Services({ services }) {
             </div>
           ) : (
             <div key={index} className='relative md:ml-[40%]'>
-              <div className='relative md:h-[450px] md:w-[85%] md:shadow-lg md:shadow-black'>
+              <div className='relative md:h-[400px] md:w-[85%] md:shadow-lg md:shadow-black'>
                 <img src={service.image.url} alt={service.name} className='w-full h-full object-cover' />
                 <div className='faded-service-1 absolute top-0 h-full left-0 w-full'></div>
               </div>

@@ -30,7 +30,7 @@ function Projects({ projects }) {
         <div className={`faded-3 w-[100%] relative`}>
             <div className='bg-gradient-to-b from-[#111132] to-[#0c0c1d] text-[42px] md:pt-20 pb-20 tracking-[6px] relative'>
                 <span className='md:ml-[3%] ml-[4%]'>PROJECTS</span>
-                <div className='md:absolute md:top-[50%] md:left-[20%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%] '></div>
+                <div className='md:absolute md:top-[50%] md:left-[24%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%] '></div>
             </div>
             <div className="flex md:flex-wrap md:flex-row flex-col  w-[94%] mt-[20px]  justify-between mx-auto">
                 {/* Map over the displayed projects and display each project */}

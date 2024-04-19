@@ -61,9 +61,9 @@ function Hero({ about }) {
 
   return (
     <div className='md:h-screen h-[100%] w-[100%] relative overflow-hidden'>
-      <div className='w-[100%] h-[100%] pb-[28%] md:p-0 flex md:flex-row flex-col-reverse bg-gradient-to-b from-[#0c0c1d] to-[#111132] ' style={{ overflowX: 'hidden' }}>
-        <div className='md:w-[80%] w-full  h-full'>
-          <motion.div className='flex  flex-col gap-[45px] mt-[14%] md:w-[50%]  md:p-0 p-4 mx-auto' variants={textVariant} initial="initial" animate="animate">
+      <div className='w-[100%]  h-[100%] pb-[28%] md:p-0 flex md:flex-row flex-col-reverse bg-gradient-to-b from-[#0c0c1d] to-[#111132] ' style={{ overflowX: 'hidden' }}>
+        <div className='md:w-[55%] w-full   h-full'>
+          <motion.div className='flex  flex-col gap-[45px] mt-[14%] md:w-[50%]  md:p-0 p-4  mx-auto' variants={textVariant} initial="initial" animate="animate">
             <motion.span className='text-[30px] tracking-[6px] text-[#663399] font-bold uppercase' variants={textVariant}>{name}</motion.span>
             <motion.span className='md:text-[40px] text-[26px] font-semibold' variants={textVariant}>{about.subTitle}.</motion.span>
             <motion.div className='z-10 flex gap-[22px]' variants={textVariant}>
@@ -77,9 +77,9 @@ function Hero({ about }) {
           </motion.div>
         </div>
         <div className='md:w-[40%]'>
-          <div className='md:h-[460px] md:w-[420px] w-[320px] h-[320px]  mt-[20%] relative mx-auto'>
-            <div className='md:w-[380px] md:h-[420px] w-[260px] h-[280px] mb-auto  ml-auto z-0 bg-gradient-to-b from-[#3f0896] to-[#663399] shadow-xl-black' style={{ boxShadow: "0 0 10px rgb(12,12,29)" }}></div>
-            <img src={avatar?.url} className='md:w-[380px] md:h-[420px] w-[280px] h-[280px] mt-auto object-cover z-10 absolute top-9 rounded-bl-[30%]' />
+          <div className='w-[320px] h-[320px]  mt-[20%] relative mx-auto'>
+            <div className=' w-[260px] h-[280px] mb-auto  ml-auto z-0 bg-gradient-to-b from-[#3f0896] to-[#663399] shadow-xl-black' style={{ boxShadow: "0 0 10px rgb(12,12,29)" }}></div>
+            <img src={avatar?.url} className=' w-[280px] h-[280px] mt-auto object-cover z-10 absolute top-9 rounded-bl-[30%]' />
           </div>
         </div>
       </div>
