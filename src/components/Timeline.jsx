@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BiSolidRightArrow } from "react-icons/bi";
+import {motion} from 'framer-motion';
 
 function formatDate(dateString) {
   const date = new Date(dateString);
@@ -8,6 +9,21 @@ function formatDate(dateString) {
 }
 
 function Timeline({ edu, exp }) {
+
+  const textVariant = {
+    initial: {
+      x: -200,
+      opacity:0,
+    },
+    animate: {
+      x: 0,
+      opacity:1,
+      transition: {
+        duration: 1,
+      },
+    },
+
+  };
   // State to track the currently selected job ID
   const [selectedJobId, setSelectedJobId] = useState("65b3e93feb20546ae6d46369");
   const [selectedWorkId, setSelectedWorkId] = useState("65f1fd9e0556c3f887e9d9d8");
@@ -38,8 +54,8 @@ function Timeline({ edu, exp }) {
   return (
     <div className="faded pt-[120px] md:pb-[200px] pb-[90px] w-full flex flex-col">
       <div className='text-[42px] pt-20 md:pb-20 pb-14  relative'>
-        <span className='md:ml-[15%] font-bold ml-[4%] '>Education</span>
-        <div className='md:absolute md:top-[50%] md:left-[31%] ml-[4%] md:ml-0 border-t border-gray-600 w-[30%] '></div>
+        <motion.div className='md:ml-[15%] font-bold ml-[4%]' variants={textVariant} initial="initial" whileInView="animate">Education</motion.div>
+        <motion.div className='md:absolute md:top-[50%] md:left-[31%] ml-[4%] md:ml-0 border-t border-gray-600 w-[30%]' initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1}}}></motion.div>
       </div>
       <div className="flex  md:w-[70%] w-[90%]  mx-auto md:h-[550px] pb-[90px] md:pb-0  md:flex-row flex-col gap-[30px]">
         {/* Left-hand side: Job Titles */}
@@ -77,8 +93,8 @@ function Timeline({ edu, exp }) {
       </div>
 
       <div className='text-[42px]  pb-20  md:mt-0  mt-12 relative'>
-        <span className='md:ml-[15%] ml-[4%] font-bold'>Experience</span>
-        <div className='md:absolute md:top-[25%] md:left-[33%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[22%] w-[30%] '></div>
+        <motion.div className='md:ml-[15%] ml-[4%] font-bold' variants={textVariant} initial="initial" whileInView="animate">Experience</motion.div>
+        <motion.div className='md:absolute md:top-[25%] md:left-[33%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[22%] w-[30%]' initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1}}}></motion.div>
       </div>
       <div className="flex  md:w-[70%] w-[90%] mx-auto md:h-[400px] md:flex-row flex-col gap-[30px]">
         {/* Left-hand side: Job Titles */}

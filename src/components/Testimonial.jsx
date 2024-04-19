@@ -4,15 +4,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
-
+import {motion} from 'framer-motion';
 
 
 function Testimonial({ reviews }) {
+
+    const textVariant = {
+        initial: {
+          x: -200,
+          opacity:0,
+        },
+        animate: {
+          x: 0,
+          opacity:1,
+          transition: {
+            duration: 1,
+          },
+        },
+    
+    };
     return (
         <section className='md:px-20  pb-20 px-4 w-[100%] font-custom '>
             <div className='text-[42px] pt-20 pb-20  relative'>
-                <span className='font-bold'>Testimonials</span>
-                <div className='md:absolute md:top-[50%] md:left-[23%] border-t border-gray-600 md:w-[18%] w-[45%] '></div>
+                <motion.div className='font-bold' variants={textVariant} initial="initial" whileInView="animate">Testimonials</motion.div>
+                <motion.div className='md:absolute md:top-[50%] md:left-[23%] border-t border-gray-600 md:w-[18%] w-[45%]' initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1}}}></motion.div>
             </div>
             <Swiper
                 slidesPerView={1}
