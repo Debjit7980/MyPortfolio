@@ -28,7 +28,7 @@ function Home() {
                 const response = await fetch(`${BASE_URL}/get/user/${params?.user ?? userId}`);
 
                 const userData = await response.json();
-
+                console.log(JSON.stringify(userData, null, 2))
                 document.title = `${userData?.user?.about?.name + ' - ' + userData?.user?.about?.title}`;
                 setUser(userData?.user);
                 setIsLoading(false);
@@ -59,15 +59,16 @@ function Home() {
     }
     return (
         <>
-            <Header />
-            <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Services />
-            <Timeline />
-            <Testimonial />
-            <Contact />
+            {console.log(sortedFilteredSkills)}
+            <section id="Home"><Header socialHandles={filteredSocialHandles}/></section>
+            <section><Hero about={user?.about}/></section>
+            <section id="About"><About about={user?.about}/></section>
+            <section id="Skills"><Skills skills={sortedFilteredSkills}/></section>
+            <section id="Projects"><Projects  projects={sortedFilteredProject} /></section>
+            <section id="Services"><Services services={filteredServices}/></section>
+            <section id="Timeline"><Timeline edu={filteredEducation} exp={filteredExperience}/></section>
+            <section id="Testimonials" ><Testimonial reviews={filteredTestimonials}/></section>
+            <section id="Contact"><Contact about={user?.about}/></section> 
         </>
     );
 }
