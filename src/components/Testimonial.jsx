@@ -12,7 +12,7 @@ function Testimonial({ reviews }) {
         <section className='md:px-20  pb-20 px-4 w-[100%] font-custom '>
             <div className='text-[42px] pt-20 pb-20  relative'>
                 <span className='font-bold'>Testimonials</span>
-                <div className='md:absolute md:top-[50%] md:left-[24%] border-t border-gray-600 md:w-[18%] w-[45%] '></div>
+                <div className='md:absolute md:top-[50%] md:left-[23%] border-t border-gray-600 md:w-[18%] w-[45%] '></div>
             </div>
             <Swiper
                 slidesPerView={1}

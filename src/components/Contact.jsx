@@ -19,7 +19,7 @@ const variants = {
 
 function Contact({ about }) {
   const ref=useRef();
-  const isInView=useInView(ref,{margin:"-100px"});
+  const isInView=useInView(ref);
   console.log("About", about);
   return (
     <motion.div className='w-full  md:pt-[180px] pt-[120px]  md:pb-[50px]' variants={variants} initial="initial" whileInView="animate">
