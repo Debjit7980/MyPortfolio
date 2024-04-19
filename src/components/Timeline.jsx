@@ -41,9 +41,9 @@ function Timeline({ edu, exp }) {
         <span className='md:ml-[15%] font-bold ml-[4%] '>Education</span>
         <div className='md:absolute md:top-[50%] md:left-[32%] ml-[4%] md:ml-0 border-t border-gray-600 w-[30%] '></div>
       </div>
-      <div className="flex  md:w-[70%] w-[90%] mx-auto md:h-[600px]  md:flex-row flex-col gap-[30px]">
+      <div className="flex  md:w-[70%] w-[90%]  mx-auto md:h-[550px] pb-[90px] md:pb-0  md:flex-row flex-col gap-[30px]">
         {/* Left-hand side: Job Titles */}
-        <div className="md:w-[30%] w-full md:mb-0 mb-[20px]">
+        <div className="md:w-[30%] w-full md:mb-0 mb-[2px]">
           {sortedEdu.map((eduItem) => (
             <div
               key={eduItem._id}
@@ -76,7 +76,7 @@ function Timeline({ edu, exp }) {
         </div>
       </div>
 
-      <div className='text-[42px]  pb-20  md:mt-0 md:mt-0 mt-12 relative'>
+      <div className='text-[42px]  pb-20  md:mt-0  mt-12 relative'>
         <span className='md:ml-[15%] ml-[4%] font-bold'>Experience</span>
         <div className='md:absolute md:top-[25%] md:left-[34%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[22%] w-[30%] '></div>
       </div>

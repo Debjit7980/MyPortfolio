@@ -32,12 +32,12 @@ function Projects({ projects }) {
                 <span className='md:ml-[3%] ml-[4%]'>PROJECTS</span>
                 <div className='md:absolute md:top-[50%] md:left-[24%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%] '></div>
             </div>
-            <div className="flex md:flex-wrap md:flex-row flex-col  w-[94%] mt-[20px]  justify-between mx-auto">
+            <div className="flex md:flex-wrap md:flex-row flex-col  md:w-[94%] w-[85%] mt-[20px]  justify-between mx-auto">
                 {/* Map over the displayed projects and display each project */}
                 {displayedProjects.map(project => (
                     <div key={project._id} className="md:w-[30%]  mb-[60px] ">
                         <button onClick={() => toggleProjectDetails(project._id)} className=" projectDiv rounded-2xl p-0 z-0 text-left">
-                            <img src={project.image.url} alt={project.title} className=" w-full h-[300px] md:h-[280px] rounded-t-2xl" />
+                            <img src={project.image.url} alt={project.title} className=" w-full h-[250px] object-cover md:h-[280px] rounded-t-2xl" />
                             <div className='p-3 pb-12 border border-purple-600 rounded-b-2xl'>
                                 <h3 className="text-[24px] text-gray-400 font-semibold mt-4">{project.title}</h3>
                                 <p className='mt-6'><span className="text-md text-gray-400 flex flex-wrap gap-[20px]"> {project.techStack.map((tech,index)=>(<span className='border border-gray-400 pl-3 pr-3 pt-1 pb-1 rounded-[15px]' key={index}>{tech.trim()}</span>))}</span></p>
