@@ -9,6 +9,8 @@ import Projects from '../components/Projects';
 import Timeline from '../components/Timeline';
 import Testimonial from '../components/Testimonial';
 import Contact from '../components/Contact';
+import Loading from '../components/Loading';
+import CustomCursor from '../components/CustomCursor';
 function Home() {
     const params = useParams();
     const navigate = useNavigate();
@@ -55,11 +57,16 @@ function Home() {
     const filteredExperience = user?.timeline?.filter((item) => !item.forEducation && item.enabled);
 
     if (isLoading) {
-        return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
+        return (
+            <>
+                <Loading/>
+            </>
+        )
     }
+    //<div className="w-full h-screen bg-gradient-to-b from-[#111132] to-[#0c0c1d] ">LOADING...</div>;
     return (
         <>
-            {console.log(sortedFilteredSkills)}
+            <CustomCursor/>
             <section id="Home"><Header socialHandles={filteredSocialHandles}/></section>
             <section><Hero about={user?.about}/></section>
             <section id="About"><About about={user?.about}/></section>

@@ -46,7 +46,7 @@ function Projects({ projects }) {
 
     return (
         <div className={`faded-3 w-[100%] relative bg-gradient-to-b from-[#111132] to-[#0c0c1d]`}>
-            <div className=' text-[42px] md:pt-20 pb-20 tracking-[6px] relative'>
+            <div className=' text-[42px] md:pt-20 pb-20 bg-gradient-to-b from-[#111132] to-[#0c0c1d] tracking-[6px] relative'>
                 <motion.div className='md:ml-[3%] ml-[4%]' variants={textVariant} initial="initial" whileInView="animate">PROJECTS</motion.div>
                 <motion.div className='md:absolute md:top-[50%] md:left-[24%] ml-[4%] md:ml-0 border-t border-gray-600 md:w-[18%] w-[45%]' initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1}}}></motion.div>
             </div>
