@@ -30,7 +30,7 @@ function Skills({ skills }) {
   return (
     <div className='faded-2 w-[100%] md:pt-[90px] z-0 pb-[90px]'>
       
-      <div className='w-[60%]'>
+      <div className='w-[60%] bg-gradient-to-b from-[#111132] to-[#0c0c1d] md:pt-2 pt-[20px] pb-[20px]'>
         <span className='md:text-[35vh]  text-[3rem]  font-bold tracking-wider ml-[20px] md:text-gray-600 opacity-20'>SKILLS</span>
       </div>
       <div ref={scrollRef}></div>
