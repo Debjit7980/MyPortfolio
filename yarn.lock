@@ -1905,6 +1905,11 @@
   "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   "version" "4.6.2"
 
+"lodash.throttle@^4.1.1":
+  "integrity" "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
+  "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
+  "version" "4.1.1"
+
 "log-update@^6.0.0":
   "integrity" "sha512-niTvB4gqvtof056rRIrTZvjNYE4rCUzO6X/X+kYjd7WFxXeJ0NwEFnRxX6ehkvv3jTwrXnNdtAak5XYZuIyPFw=="
   "resolved" "https://registry.npmjs.org/log-update/-/log-update-6.0.0.tgz"
@@ -2280,7 +2285,7 @@
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-3.2.5.tgz"
   "version" "3.2.5"
 
-"prop-types@^15.8.1":
+"prop-types@^15.7.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -2299,7 +2304,7 @@
   "resolved" "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   "version" "1.2.3"
 
-"react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@16.x.x || 17.x.x || 18.x.x":
+"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@16.x.x || 17.x.x || 18.x.x":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -2342,6 +2347,14 @@
   dependencies:
     "@remix-run/router" "1.15.3"
 
+"react-scroll@^1.9.0":
+  "integrity" "sha512-mamNcaX9Ng+JeSbBu97nWwRhYvL2oba+xR2GxvyXsbDeGP+gkYIKZ+aDMMj/n20TbV9SCWm/H7nyuNTSiXA6yA=="
+  "resolved" "https://registry.npmjs.org/react-scroll/-/react-scroll-1.9.0.tgz"
+  "version" "1.9.0"
+  dependencies:
+    "lodash.throttle" "^4.1.1"
+    "prop-types" "^15.7.2"
+
 "react-swiper@^0.1.5":
   "integrity" "sha512-6ejmuzood/uh1vTvWryMUR2GeRA4XTjBDAk6i3W4qUf9+calY/TdlIAtqSFkTaHpyn6A7bI9SfFNi+pr+fZJcQ=="
   "resolved" "https://registry.npmjs.org/react-swiper/-/react-swiper-0.1.5.tgz"
@@ -2349,7 +2362,7 @@
   dependencies:
     "object-assign" "^2.0.0"
 
-"react@*", "react@^18.0.0", "react@^18.2.0", "react@>=16.8", "react@16.x.x || 17.x.x || 18.x.x":
+"react@*", "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>=16.8", "react@16.x.x || 17.x.x || 18.x.x":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

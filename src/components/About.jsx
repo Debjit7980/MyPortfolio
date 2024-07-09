@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 function About({ about }) {
   const { alternateAvatars } = about;
-
+  
   const textVariant = {
     initial: {
       x: -300,
@@ -14,7 +14,8 @@ function About({ about }) {
       opacity: 1,
       transition: {
         duration: 1,
-        delay: 0.4
+        delay: 1,
+        
       },
     },
   };
