@@ -51,7 +51,7 @@ function Sidebar() {
         },
     };
 
-    const links = ["Home", "About", "Skills", "Projects", "Services", "Timeline", "Testimonials", "Contact"]
+    const links = ["Home", "About", "Skills", "Projects", "Timeline", "Contact"]
 
     return (
         <motion.div className='flex flex-col items-center justify-center bg-white text-black' animate={open ? "open" : "closed"}>
