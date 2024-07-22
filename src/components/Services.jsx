@@ -182,7 +182,7 @@ function Services() {
             )}
             {selectedProject === service._id && (
               <div key={`modal-${service._id}`}>
-                <div className="bg-black z-40 border border-violet-600 rounded-lg fixed md:w-[50%] w-[90%] top-[8%] md:top-[4%] left-[5%] md:left-[25%]">
+                <div className="bg-black z-40 border border-violet-600 rounded-lg fixed md:w-[50%] w-[90%] top-[12%] md:top-[5%] left-[5%] md:left-[25%]">
                   <div className="p-3 rounded-lg relative">
                     <img src={service.image.url} alt={service.title} className="w-full h-[200px] md:h-[320px] object-cover rounded-lg" />
                     <h2 className="text-[24px] font-semibold md:mt-4 mt-5">{service.title}</h2>
