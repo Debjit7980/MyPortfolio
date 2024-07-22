@@ -182,7 +182,7 @@ function Services() {
             )}
             {selectedProject === service._id && (
               <div key={`modal-${service._id}`}>
-                <div className="bg-black z-40 border border-violet-600 rounded-lg fixed md:w-[50%] w-[90%] top-[5%] md:top-[3%] left-[5%] md:left-[25%]">
+                <div className="bg-black z-40 border border-violet-600 rounded-lg fixed md:w-[50%] w-[90%] top-[8%] md:top-[4%] left-[5%] md:left-[25%]">
                   <div className="p-3 rounded-lg relative">
                     <img src={service.image.url} alt={service.title} className="w-full h-[200px] md:h-[320px] object-cover rounded-lg" />
                     <h2 className="text-[24px] font-semibold md:mt-4 mt-5">{service.title}</h2>
@@ -192,10 +192,10 @@ function Services() {
                       <a href={service.githuburl} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#3f0896] to-[#663399] text-white text-[20px] text-center px-0 py-2 md:w-[20%] w-[25%] rounded mr-2">GitHub</a>
                       <a href={service.liveurl} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#3f0896] to-[#663399] text-white text-[20px] text-center py-2 md:w-[20%] w-[25%] rounded">Live</a>
                     </div>
-                    <button className="bg-gradient-to-r from-[#3f0896] to-[#663399] absolute font-bold text-white text-2xl px-5 py-3 rounded-[50%] -top-[18px] -right-[12px]" onClick={() => toggleProjectDetails(null)}>X</button>
+                    <button className="bg-gradient-to-r from-[#3f0896] to-[#663399] absolute font-bold text-white text-2xl px-5 py-3 rounded-[50%] -top-[18px] -right-[12px] font-thin" onClick={() => toggleProjectDetails(null)}>X</button>
                   </div>
                 </div>
-                <div className="absolute -top-[20%] inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm  w-[100%] h-[100%] z-10"></div>
+                <div className="absolute -top-[10%] inset-0  bg-opacity-50 backdrop-filter backdrop-blur-sm  w-[100%] h-[200%] z-10"></div>
               </div>
             )}
           </React.Fragment>
