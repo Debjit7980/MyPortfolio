@@ -130,7 +130,7 @@ function Services() {
       },
       "description": "Developed an engaging landing page for an e-learning website's referral program. Users can easily refer courses by filling out a form, triggering an automated email from the website team to the referee. All referral details are securely stored in a MySQL database.",
       "techStack": ["Reactjs", "Tailwind", "CSS", "MySQL"],
-      "_id": "5"
+      "_id": "6"
     }
   ]
 

@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { IoIosArrowDown } from "react-icons/io";
 import profile from './../assets/Images/profile.jpg';
+import resume from './../assets/Resume_debjit singha roy.pdf';
 
 function Hero() {
 
@@ -100,7 +101,7 @@ function Hero() {
               <motion.a href="#Projects" className='p-[12px]  border border-white bg-transparent hover:bg-white md:text-lg text-[15px] text-white hover:text-[#111132] hover:duration-700 font-thin rounded-[10px] md:text-lg cursor-pointer' variants={textVariant}>
                 See the Latest Works
               </motion.a>
-              <motion.a href="./../assets/Resume_debjit singha roy.pdf" download className='p-[12px] text-[15px] md:text-lg flex items-center justify-center border border-white bg-white hover:bg-transparent text-[#111132] hover:text-white hover:duration-700 font-thin rounded-[10px] md:text-lg cursor-pointer' variants={textVariant}>
+              <motion.a href={resume} download className='p-[12px] text-[15px] md:text-lg flex items-center justify-center border border-white bg-white hover:bg-transparent text-[#111132] hover:text-white hover:duration-700 font-thin rounded-[10px] md:text-lg cursor-pointer' variants={textVariant}>
                 Download Resume
               </motion.a>
             </motion.div>
