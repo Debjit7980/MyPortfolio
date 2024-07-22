@@ -1,7 +1,7 @@
-This is a sample Portfolio Webpage developed using ReactJs, Tailwind, CSS
+This is my portfolio website. 
 
-Live Link: https://the-portfolyo-hazel.vercel.app/
-# React + Vite
+Live Link: [https://the-portfolyo-hazel.vercel.app/](https://my-portfolio-zeta-ten-74.vercel.app/)
+# React + Vite + Tailwind
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
