@@ -189,10 +189,10 @@ function Services() {
                     <p className='mt-4'><span className="text-sm text-gray-400 flex gap-[15px] flex-wrap">{service.techStack.map((tech, index) => (<span className='border border-gray-400 pl-3 pr-3 pt-1 pb-1 rounded-[18px]' key={index}>{tech.trim()}</span>))}</span></p>
                     <p className="text-gray-400 text-sm mt-4 font-sans">{service.description}</p>
                     <div className="flex justify-between mt-4">
-                      <a href={service.githuburl} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#3f0896] to-[#663399] text-white text-[20px] text-center px-0 py-2 md:w-[20%] w-[25%] rounded mr-2">GitHub</a>
-                      <a href={service.liveurl} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#3f0896] to-[#663399] text-white text-[20px] text-center py-2 md:w-[20%] w-[25%] rounded">Live</a>
+                      <a href={service.githuburl} target="_blank" rel="noopener noreferrer" className="text-purple-600 border border-purple-600 font-thin  text-[18px] text-center px-0 py-1 md:w-[18%] w-[25%] rounded mr-2 duration-500 ease-in-out hover:border-none hover:text-white hover:bg-gradient-to-r from-[#3f0896] to-[#663399]">GitHub</a>
+                      <a href={service.liveurl} target="_blank" rel="noopener noreferrer" className="text-purple-600 border border-purple-600 font-thin duration-500 ease-in-out text-[18px] text-center py-1 md:w-[16%] w-[25%] rounded hover:border-none hover:text-white hover:bg-gradient-to-r from-[#3f0896] to-[#663399]">Live</a>
                     </div>
-                    <button className="bg-gradient-to-r from-[#3f0896] to-[#663399] absolute font-bold text-white text-2xl px-5 py-3 rounded-[50%] -top-[18px] -right-[12px] font-thin" onClick={() => toggleProjectDetails(null)}>X</button>
+                    <button className="bg-gradient-to-r from-[#3f0896] to-[#663399] absolute font-bold text-white text-md px-3 py-1 rounded-[50%] -top-[16px] -right-[18px] font-thin" onClick={() => toggleProjectDetails(null)}>X</button>
                   </div>
                 </div>
                 <div className="absolute -top-[10%] inset-0  bg-opacity-50 backdrop-filter backdrop-blur-sm  w-[100%] h-[200%] z-10"></div>
