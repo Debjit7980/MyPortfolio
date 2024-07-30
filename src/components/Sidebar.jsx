@@ -54,14 +54,14 @@ function Sidebar() {
 
     return (
         <motion.div
-            className='flex flex-col items-center justify-center bg-white text-black'
+            className='flex flex-col items-center justify-center bg-white text-black fixed z-50'
             variants={variant}
             initial="closed"
             animate={open ? "open" : "closed"}
             
         >
             <motion.div
-                className='fixed z-40 top-0 left-0 bottom-0 w-[400px] bg-white'
+                className='fixed top-0 left-0 bottom-0 w-[400px] bg-white'
                 variants={variant}
             >
                 <motion.div
